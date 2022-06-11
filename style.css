@@ -1,0 +1,444 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        width: 100%;
+    }
+    /*nav start here*/
+    
+    .navbar {
+        box-shadow: 0px 5px 10px 0px #aaa;
+        position: fixed;
+        background: rgb(9, 143, 231);
+        color: #000;
+        opacity: 0.85;
+        z-index: 22222;
+        display: inline;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        padding: 0 3rem;
+    }
+    
+    .navbar-container a {
+        padding-top: 0.8rem;
+        margin-left: 2rem;
+        color: black;
+    }
+    
+    .navbar .navbar-container ul {
+        display: flex;
+        background: none;
+        margin-right: 2rem;
+    }
+    
+    .navbar .navbar-container ul li {
+        margin-right: 1.5rem;
+        padding-top: 1rem;
+        list-style: none;
+        background: none;
+        font-size: 1.6rem;
+    }
+    
+    #menubar {
+        display: none;
+        position: fixed;
+        top: 0.6rem;
+        right: 2rem;
+        font-size: 1.5rem;
+        display: none;
+    }
+    /*nav ends here*/
+    /* top wrappeer start here*/
+    
+    .flex-box {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .top-wrapper {
+        position: relative;
+        top: 5.5rem;
+        width: 100%;
+        background-size: cover;
+        color: white;
+        height: 500px;
+        padding: 0 3rem;
+        background-repeat: no-repeat;
+        animation: bgchange 15s ease-in-out infinite;
+        transition: 0.8s;
+    }
+    
+    @keyframes bgchange {
+        0% {
+            background-image: url("image/img2.jpg");
+        }
+        20% {
+            background-image: url("image/img11.jpg");
+        }
+        40% {
+            background-image: url("image/img3.jpg");
+        }
+        60% {
+            background-image: url("image/img2.jpg");
+        }
+        80% {
+            background-image: url("image/img11.jpg");
+        }
+        100% {
+            background-image: url("image/img3.jpg");
+        }
+    }
+    
+    .top-wrapper .inner {
+        padding: 0 4rem;
+    }
+    
+    .top-wrapper .box h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .top-wrapper .text-top {
+        margin: 0 auto;
+        padding-top: 6.5rem;
+        color: black;
+    }
+    
+    .top-wrapper .text-top h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem 0;
+        opacity: 1;
+        z-index: 999;
+        color: darkturquoise;
+    }
+    
+    .top-wrapper .text-top p {
+        color: #fff;
+        line-height: 2rem;
+        word-spacing: 0.1rem;
+        text-align: center;
+        opacity: 1;
+        z-index: 999;
+        padding: 0 3rem;
+    }
+    
+    .box-bouncing {
+        margin-top: 13rem;
+        justify-content: end;
+    }
+    
+    .box-bouncing ul {
+        display: flex;
+    }
+    
+    .box-bouncing ul li {
+        width: 20px;
+        height: 20px;
+        list-style: none;
+        background-color: mediumspringgreen;
+        margin: 1rem;
+        border-radius: 2rem;
+        animation: bouncing 1s linear infinite alternate-reverse;
+    }
+    
+    @keyframes bouncing {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-80px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    ul li:nth-child(2) {
+        animation-delay: 0.2s;
+        background-color: magenta;
+    }
+    
+    ul li:nth-child(3) {
+        animation-delay: 0.4s;
+        background-color: sandybrown;
+    }
+    
+    ul li:nth-child(4) {
+        animation-delay: 0.6s;
+        background-color: lightskyblue;
+    }
+    
+    ul li:nth-child(5) {
+        animation-delay: 0.8s;
+        background-color: lightpink;
+    }
+    /* top wrappeer ends here*/
+    /* wrappeer zero start here*/
+    
+    .wrapper-zero {
+        margin-top: 5rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    
+    .wrapper-zero .textbox h1 {
+        font-size: 2.2rem;
+        color: lightseagreen;
+        padding-bottom: 1rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .wrapper-zero .textbox {
+        box-shadow: 0px 5px 5px;
+        padding: 30px 50px;
+        margin-top: 2rem;
+    }
+    
+    .wrapper-zero img {
+        width: 85%;
+        margin-top: 2rem;
+        box-shadow: 0px 5px 5px;
+        padding: 20px 20px;
+    }
+    /* wrappeer zero ends here*/
+    /* one wrappeer start here*/
+    
+    .wrapper-one {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+        background-image: url("image/bg.jpg");
+        color: white;
+    }
+    
+    .wrapper-one .imagebox {
+        padding: 1rem 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .wrapper-one .imagebox img {
+        width: 100%;
+        border-radius: 10%;
+        box-shadow: 10px;
+    }
+    
+    .wrapper-one .textbox {
+        padding: 1rem 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* one wrappeer ends here*/
+    /* one wrappeer ends here*/
+    
+    .wrapper-two {
+        margin-top: 2rem;
+        padding: 1rem 0;
+        padding: 0 2rem;
+    }
+    
+    .wrapper-two .motu {
+        box-shadow: 0px 5px 20px;
+        padding: 20px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrapper-two .imagebox {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .wrapper-two .imagebox img {
+        width: 100%;
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    
+    .wrapper-two .text-box {
+        text-align: center;
+    }
+    /* one wrappeer ends here*/
+    /* mid-wrappeer start here*/
+    
+    .mid-wrapper {
+        margin: 2rem 0;
+        background-image: url("image/bg.jpg");
+        padding: 2rem 2rem;
+        color: lightcoral;
+    }
+    /* mid- wrappeer ends here*/
+    /* wrappeer-three start here*/
+    
+    .wrapper-three {
+        background: lavender;
+        padding: 1.5rem 2rem;
+        margin: 1rem 0;
+    }
+    
+    .wrapper-three .imagebox {
+        margin: 1rem 0;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .wrapper-three .imagetext {
+        background: rgba(0, 0, 0, 0.8);
+        background-size: cover;
+        position: absolute;
+        top: 0%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        color: red;
+        text-align: center;
+        padding: 6rem 2rem;
+        opacity: 0;
+        box-sizing: border-box;
+        transition: all 0.5s linear;
+        overflow: hidden;
+    }
+    
+    .imagebox:hover .imagetext {
+        left: 0;
+        opacity: 1;
+    }
+    
+    .wrapper-three .imagebox img {
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+    
+    .wrapper-three .imagebox img:hover {
+        transform: scale(2);
+    }
+    
+    .wrapper-three .text-box {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .wrapper-three .imagetext h1 {
+        font-size: 1.7rem;
+        color: lightseagreen;
+        padding: 1rem 0;
+    }
+    
+    .wrapper-three .imagetext p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        word-spacing: 0.1rem;
+        color: white;
+    }
+    /* wrappeer-three ends here*/
+    /* last wrappeer start here*/
+    
+    .last-wrapper {
+        margin: 2rem 0;
+        background: black;
+        padding: 2rem 2rem;
+        color: white;
+    }
+    
+    .last-wrapper .inner {
+        padding: 0 4rem;
+    }
+    
+    .last-wrapper .lastbox h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: lightseagreen;
+    }
+    
+    .last-wrapper .lastbox h3 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .last-wrapper .lastbox p {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        line-height: 4.4rem;
+    }
+    
+    .last-wrapper .lastbox i {
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: white;
+    }
+    
+    .last-wrapper .social {
+        margin-top: 4.5rem;
+    }
+    /* wrappeer-three ends here*/
+    
+    @media only screen and (max-width:768px) {
+        .navbar .navbar-container ul {
+            display: none;
+            position: absolute;
+            background: rgb(9, 143, 231);
+            top: 3rem;
+            padding: 1rem 0rem;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 1.6rem;
+        }
+        .navbar .navbar-container ul li {
+            padding: 1.2rem 0;
+            margin-right: 0;
+            border-bottom: 0.5rem solid yellow;
+        }
+        #menubar {
+            display: block;
+        }
+        .wrapper-one .imagebox img {
+            width: 380px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .wrapper-two .imagebox img {
+            width: 350px;
+        }
+        .wrapper-three .text-box {
+            padding: 1rem;
+        }
+        .top-wrapper .text-top h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    
+    @media only screen and (max-width:991px) {
+        .wrapper-three {
+            padding: 2rem 5rem;
+        }
+        .wrapper-three .imagebox {
+            width: 320px;
+        }
+        .wrapper-three .imagebox img {
+            width: 320px;
+        }
+    }
